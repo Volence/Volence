@@ -1,0 +1,29 @@
+.section-about {
+  background-color: $color-secondary-dark;
+  padding: 25rem 0;
+  margin-top: -20vh;
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+}
+
+.section-showcase {
+  position: relative;
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-secondary-light, 0.4),
+    rgba($color-primary-dark, 0.4)
+  );
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
+}
+
+.section-contact {
+  background-color: $color-secondary-dark;
+  //padding: 16rem 0;
+  //@include respond(tab-port) {
+    //padding: 20rem 0;
+ // }
+}

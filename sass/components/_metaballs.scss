@@ -1,0 +1,55 @@
+.metaballs {
+    margin:0;
+    height: 100%;
+    position: relative;
+    -webkit-filter: contrast(140%);
+    filter: contrast(140%);
+    padding:30px;
+    overflow: hidden;
+    
+    // Different speeds and sizes
+    &__meta1 {
+        width:120px;
+        height:120px;
+        margin:-50px;
+        background-color: $color-primary;
+        animation: move 26s infinite alternate ease-in-out;
+    }
+    &__meta2 {
+        width:60px;
+        height:60px;
+        margin:-50px;
+        background: $color-primary-light;
+        animation: move 22s infinite alternate ease-in-out;
+    }
+
+    &__meta3 {
+        width:80px;
+        height:80px;
+        margin:-50px;
+        background: $color-tertiary-light;
+        animation: move 18s infinite alternate ease-in-out;
+    }
+
+    &__meta4 {
+        width:100px;
+        height:100px;
+        margin:-50px;
+        background: $color-tertiary-light;
+        animation: move 12s infinite alternate ease-in-out;
+    }
+
+    //Setting the base properties
+    &__meta1,
+    &__meta2,
+    &__meta3,
+        &__meta4 {
+        position: absolute;
+        left:50%;
+        top:50%;
+        border-radius:50%;
+        -webkit-filter: blur(15px);
+        filter: blur(15px);
+        z-index: -1;
+    }
+}

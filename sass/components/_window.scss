@@ -1,0 +1,170 @@
+.window {
+  // Functionality
+  position: relative;
+  display: block;
+  height: 32rem;
+  border: 2px solid $color-secondary-dark;
+  outline-style: outset;
+  outline-color: $color-secondary-light;
+  outline-width: thin;
+  transition: all 0.2s; /*always need the transition property on the initial state*/
+
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__box {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: border-radius-pixels;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    //background-color: $color-white;
+  }
+
+  // Front side styling
+  &__picture {
+    background-size: cover;
+    height: 100%;
+    background-blend-mode: screen;
+    position: relative;
+    //-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    //clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: border-radius-pixels;
+    border-top-right-radius: border-radius-pixels;
+    -webkit-filter: blur(4px) grayscale(100%) brightness(50%); /* Safari 6.0 - 9.0 */
+    filter: blur(4px) grayscale(100%) brightness(50%);
+    transition: all .8s;
+
+    &--1 {
+      background-image: 
+        url(../img/JayGrizz_Window.png);
+    }
+
+    &--2 {
+      background-image: 
+        url(../img/Chris_Site.png);
+    }
+
+    &--3 {
+      background-image: 
+        url(../img/Github.png);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: Center;
+    color: $color-white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 4rem;
+    width: 70%;
+    z-index: 4;
+    line-height: 3.2rem;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    position: absolute;
+    color: $color-primary;
+    font-weight: 800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 12rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 2rem 2rem rgba($color-black, 0.4); /*X, Y, Fade distance, Color */
+    cursor: pointer;
+  }
+
+  &:hover &__picture {
+    -webkit-filter: blur(0px) grayscale(0%) brightness(100%); /* Safari 6.0 - 9.0 */
+    filter: blur(0px) grayscale(0%) brightness(100%);
+  }
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    //height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__box {
+      //height: auto;
+      position: relative;
+      box-shadow: none;
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+  }
+}

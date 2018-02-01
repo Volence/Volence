@@ -1,0 +1,42 @@
+.footer {
+    background-color: $color-grey-dark-3;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+    position: relative;
+    //height: 24rem;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+    &__copyright {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        width: 75%;
+        text-align: center;
+        display: block;
+        margin: auto;
+
+        @include respond(tab-port) {
+            padding-top: 0rem;
+            width: 100%;
+            float: none;
+        }
+    }
+    &__icon {
+        font-size: 3.4rem; 
+        margin: 2rem;
+        transition: all 0.2s;
+
+        &:visited { 
+            color: $color-grey-light-1; 
+        }
+
+        &:hover {
+            color: $color-primary; 
+            transform: translateY(-4px) scale(1.1);
+        }
+    }
+
+}

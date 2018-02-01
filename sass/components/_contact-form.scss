@@ -1,0 +1,97 @@
+.contact-form {
+    background-color: $color-secondary-light;
+    padding:6rem;
+    height: 100%;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
+
+    &__top-row:not(:nth-child(3)) {
+        margin-right: 12rem;
+    }
+    &__second-row:not(:nth-child(5)) {
+        margin-right: 12rem;
+    }
+    &__bottom {
+        width: 100%;
+        height: 16rem;
+    }
+
+        &__group {
+            width: 42%;           
+            display: inline-block;
+        }
+
+        &__group:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    
+        &__input {
+            font-size: 1.5rem;
+            font-family: inherit;
+            color: inherit;
+            padding: 1.5rem 2rem;
+            border-radius: 2px;
+            background-color: rbga($color-white, .5);
+            border: none;
+            border-bottom: 3px solid transparent;
+            width: 100%;
+            display: block;
+            transition: all .3s;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
+    
+            @include respond(tab-port) {
+                width: 100%;
+            }
+    
+            &:focus {
+                outline: none;
+                box-shadow: 0 1rem 2rem rgba($color-black, .1);
+                border-bottom: 3px solid $color-tertiary-light;
+            }
+    
+            &:focus:invalid {
+                border-bottom: 3px solid $color-tertiary-dark;
+            }
+    
+            &::-webkit-input-placeholder {
+                color: $color-grey-dark-2;
+            }
+
+            &--button {
+                width: 40%;
+                margin: auto;
+                transition: all 0.2s;
+                background-color: $color-tertiary-dark;
+                color: $color-white;
+                border-bottom: 0;
+
+            &:hover {
+                background-color: $color-tertiary-light;
+                transform: translateY(-8px);
+                box-shadow: 0 2rem 2rem rgba($color-black, 0.4); /*X, Y, Fade distance, Color */
+                cursor: pointer;
+            }    
+            }
+        }
+    
+    
+        &__label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-left: 2rem;
+            margin-top: .7rem;
+            display: block;
+            transition: all .3s;
+        }
+    
+        &__input:placeholder-shown + &__label {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4rem);
+        }
+    
+}

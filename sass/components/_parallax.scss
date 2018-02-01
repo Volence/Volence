@@ -1,0 +1,16 @@
+.parallax {
+    padding: 16rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.7),
+        rgba($color-secondary-dark, 0.7)
+      ),
+      url(../img/dark-triangles.png);
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
