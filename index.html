@@ -198,33 +198,33 @@
                 <section class="section-contact">
                         <div class="parallax">
                                         <a name="contact"></a>
-                                <form action="mailto:sameyer17@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                                <form action="/mail.php" method="post" class="contact-form">
                                         <div class="u-center-text u-margin-bottom-big">
                                                         <h2 class="heading-secondary">
                                                                 Contact Me
                                                         </h2>
                                                 </div>
                                         <div class="contact-form__group contact-form__top-row">
-                                                <input type="text" class="contact-form__input" placeholder="Full Name*" id="name" required>
+                                                <input type="text" class="contact-form__input" placeholder="Full Name*" name="name" required>
                                                 <label for="name" class="contact-form__label">Full name*</label>
                                         </div>
                                         <div class="contact-form__group contact-form__top-row">
-                                                <input type="email" class="contact-form__input" placeholder="Email Address*" id="email" required>
+                                                <input type="email" class="contact-form__input" placeholder="Email Address*" name="email" required>
                                                 <label for="email" class="contact-form__label">Email Address*</label>
                                         </div>
                                         <div class="contact-form__group contact-form__second-row">
-                                                <input type="text" class="contact-form__input" placeholder="Subject*" id="subject" required>
+                                                <input type="text" class="contact-form__input" placeholder="Subject*" name="subject" required>
                                                 <label for="subject" class="contact-form__label">Subject*</label>
                                         </div>
                                         <div class="contact-form__group contact-form__second-row">
-                                                <input type="tel" class="contact-form__input" placeholder="Contact Number" id="tel">
+                                                <input type="tel" class="contact-form__input" placeholder="Contact Number" name="tel">
                                                 <label for="tel" class="contact-form__label">Contact Number</label>
                                         </div>
                                         <div class="contact-form__bottom">
-                                                <textarea class="contact-form__input" name="comment" required placeholder="Your Message...*" id="message"></textarea>
+                                                <textarea class="contact-form__input" name="comment" required placeholder="Your Message...*" name="message"></textarea>
                                                 <label for="message" class="contact-form__label">Your Message...*</label>
                                         </div>
-                                        <input class="contact-form__input contact-form__input--button" type="submit" value="Submit">
+                                        <input class="contact-form__input contact-form__input--button" type="submit" value="Submit" name="submit">
                                 </form>
                         </div>
                 </section>
