@@ -7,8 +7,8 @@ $formcontent="From: $name \n Message: $message \n Contact Number: $number";
 $recipient = "sameyer17@gmail.com";
 $subject = $_POST['subject'];
 $mailheader = "From: $email \r\n";
-//if ($_POST['submit']) {
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+if ($_POST['submit']) {
+mail($recipient, $subject, $formcontent, $mailheader);
 echo "Thank You!";
-//}
+}
 ?>
