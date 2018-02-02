@@ -26,7 +26,11 @@
   //@include respond(tab-port) {
     //padding: 20rem 0;
  // }
- @include respond(tab-port) {
-  padding: 20rem 0 10rem 0;
+ @include respond(tab-land) {
+  width: 100%;
+}
+
+@include respond(tab-port) {
+  width: 100%;
 }
 }

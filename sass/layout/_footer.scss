@@ -18,18 +18,26 @@
         display: block;
         margin: auto;
 
+
+
         @include respond(tab-port) {
             padding-top: 0rem;
             width: 100%;
             float: none;
         }
     }
+
+    &__link:visited,
+    &__link:link { 
+        color: $color-grey-light-1; 
+    }
     &__icon {
         font-size: 3.4rem; 
         margin: 2rem;
         transition: all 0.2s;
 
-        &:visited { 
+        &:visited,
+        &:link { 
             color: $color-grey-light-1; 
         }
 
