@@ -66,10 +66,12 @@ body {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+  color: $color-white;
 }
 
 .paragraph {
   font-size: $default-font-size;
+  color: $color-white;
 
   &:not(last-child) {
     margin-bottom: 3rem;

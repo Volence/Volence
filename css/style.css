@@ -52,33 +52,33 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @keyframes move {
   0% {
-    transform: translate(0%, 100%) scale(0.5);
-    -webkit-filter: blur(7px);
-    filter: blur(7px); }
+    transform: translate(0%, 150%) scale(0.5);
+    -webkit-filter: blur(7px) brightness(25%);
+    filter: blur(7px) brightness(25%); }
   15% {
-    transform: translate(-820%, 260%) scale(0.3);
-    -webkit-filter: blur(4px);
-    filter: blur(4px); }
+    transform: translate(-820%, 460%) scale(0.3);
+    -webkit-filter: blur(4px) brightness(25%);
+    filter: blur(4px) brightness(25%); }
   30% {
-    transform: translate(700%, -80%) scale(0.5);
-    -webkit-filter: blur(7px);
-    filter: blur(7px); }
+    transform: translate(700%, -180%) scale(0.5);
+    -webkit-filter: blur(7px) brightness(25%);
+    filter: blur(7px) brightness(25%); }
   40% {
-    transform: translate(-440%, 280%) scale(0.7);
-    -webkit-filter: blur(10px);
-    filter: blur(10px); }
+    transform: translate(-440%, 380%) scale(0.7);
+    -webkit-filter: blur(10px) brightness(25%);
+    filter: blur(10px) brightness(25%); }
   60% {
-    transform: translate(440%, -80%) scale(1);
-    -webkit-filter: blur(14px);
-    filter: blur(14px); }
+    transform: translate(440%, -280%) scale(1);
+    -webkit-filter: blur(14px) brightness(25%);
+    filter: blur(14px) brightness(25%); }
   80% {
-    transform: translate(-660%, -20%) scale(1.2);
-    -webkit-filter: blur(18px);
-    filter: blur(18px); }
+    transform: translate(-660%, -120%) scale(1.2);
+    -webkit-filter: blur(18px) brightness(25%);
+    filter: blur(18px) brightness(25%); }
   100% {
-    transform: translate(760%, 60%) scale(1);
-    -webkit-filter: blur(14px);
-    filter: blur(14px); } }
+    transform: translate(760%, 160%) scale(1);
+    -webkit-filter: blur(14px) brightness(25%);
+    filter: blur(14px brightness(25%)); } }
 
 *,
 *::after,
@@ -169,10 +169,12 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #fff; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #fff; }
   .paragraph:not(last-child) {
     margin-bottom: 3rem; }
 
@@ -207,7 +209,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .5;
+  opacity: .3;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -296,41 +298,38 @@ body {
   margin: 0;
   height: 100%;
   position: relative;
-  -webkit-filter: contrast(140%);
-  filter: contrast(140%);
+  -webkit-filter: contrast(100%);
+  filter: contrast(100%);
   padding: 30px;
   overflow: hidden; }
   .metaballs__meta1 {
     width: 120px;
     height: 120px;
-    margin: -50px;
     background-color: #00ADB5;
     animation: move 26s infinite alternate ease-in-out; }
   .metaballs__meta2 {
     width: 60px;
     height: 60px;
-    margin: -50px;
     background: #14FFEC;
     animation: move 22s infinite alternate ease-in-out; }
   .metaballs__meta3 {
     width: 80px;
     height: 80px;
-    margin: -50px;
     background: #29ff46;
     animation: move 18s infinite alternate ease-in-out; }
   .metaballs__meta4 {
     width: 100px;
     height: 100px;
-    margin: -50px;
     background: #29ff46;
     animation: move 12s infinite alternate ease-in-out; }
   .metaballs__meta1, .metaballs__meta2, .metaballs__meta3, .metaballs__meta4 {
     position: absolute;
     left: 50%;
     top: 50%;
+    margin: -50px;
     border-radius: 50%;
-    -webkit-filter: blur(15px);
-    filter: blur(15px);
+    -webkit-filter: blur(15px) brightness(50%);
+    filter: blur(15px) brightness(50%);
     z-index: -1; }
 
 .parallax {
@@ -381,9 +380,9 @@ body {
     filter: blur(4px) grayscale(100%) brightness(50%);
     transition: all .8s; }
     .window__picture--1 {
-      background-image: url(../img/JayGrizz_Window.png); }
+      background-image: url(../img/JayGrizz_Window.jpg); }
     .window__picture--2 {
-      background-image: url(../img/Chris_Site.png); }
+      background-image: url(../img/Chris_Site.jpg); }
     .window__picture--3 {
       background-image: url(../img/Github.png); }
   .window__heading {
