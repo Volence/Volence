@@ -370,6 +370,7 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
   .window__picture {
     background-size: cover;
+    background-position: center;
     height: 100%;
     background-blend-mode: screen;
     position: relative;
@@ -382,7 +383,7 @@ body {
     .window__picture--1 {
       background-image: url(../img/JayGrizz_Window.jpg); }
     .window__picture--2 {
-      background-image: url(../img/Chris_Site.jpg); }
+      background-image: url(../img/JahSite_Window.png); }
     .window__picture--3 {
       background-image: url(../img/Github.png); }
   .window__heading {
@@ -3501,7 +3502,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(57, 62, 70, 0.788), rgba(13, 115, 119, 0.815)), url(../img/city_1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(57, 62, 70, 0.788), rgba(13, 115, 119, 0.815)), url(../img/city_2.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }

@@ -29,6 +29,7 @@
   // Front side styling
   &__picture {
     background-size: cover;
+    background-position: center;
     height: 100%;
     background-blend-mode: screen;
     position: relative;
@@ -45,7 +46,7 @@
 
     &--2 {
       background-image: 
-        url(../img/Chris_Site.jpg);
+        url(../img/JahSite_Window.png);
     }
 
     &--3 {
