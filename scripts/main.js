@@ -8,5 +8,9 @@ navItem.click(function(){
 var lastScrollTop = 0;
 
 $(window).scroll(function(){
+    if ($(window).width() <= 800){	
+        $(".header__text-box").css("opacity", 1 - $(window).scrollTop() / 250);
+	} else {
     $(".header__text-box").css("opacity", 1 - $(window).scrollTop() / 350);
-  });
+  }
+});
